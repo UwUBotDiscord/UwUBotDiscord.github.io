@@ -1,17 +1,10 @@
 <!DOCTYPE html>
 <html>
-  <head>
-   <link
-      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,400;0,900;1,279;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="./lodash.js"></script>
-    <script defer src="./script.js"></script>
-    <script defer src="./autoExpand.js"></script>
-    <script src="https://cdn.rawgit.com/jackmoore/autosize/master/dist/autosize.min.js"></script>
-  <style>
-  body, html
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,400;0,900;1,279;1,900&amp;display=swap" rel="stylesheet" /><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><script src="./lodash.js"></script><script defer src="./script.js"></script><script defer src="./autoExpand.js"></script><script src="https://cdn.rawgit.com/jackmoore/autosize/master/dist/autosize.min.js"></script>
+	<style type="text/css">body, html
   {
   background-color: #233339;
   color: white;
@@ -62,53 +55,89 @@
     width: 100vw;
     z-index: 2;
    }
+	</style>
+</head>
+<body>
+<div class="header">
+         <div class="headertext">
+         <p>UwUBot | Discord Bot⠀<a class="button" href="https://uwubot.org/">Home</a>⠀<a class="button" href="http://uwubot.org/dashboard">Dashboard</a>⠀ <a class="button" href="https://support.uwubot.org/">Contacts us!</a>⠀<a class="button" href="https://discord.com/api/oauth2/authorize?client_id=789524173399261184&amp;permissions=8&amp;scope=bot">Invite</a>⠀<a class="button" href="#Commands">Commands</a>⠀<a class="button" href="https://top.gg/bot/789524173399261184/vote">Vote</a></p>
+          </div>
+          </div>
 
+<p></p>
 
-  </style>
-  </head>
-  <body>
-      <div class="header">
-      <div class="headertext"><p>UwUBot | Discord Bot ⠀<a href='http://uwubot.uk.to/' class="button">Home</a>⠀<a href='http://uwubot.us.to:8080/gb-status' class="button">Dashboard</a>⠀<a href='https://discord.com/api/oauth2/authorize?client_id=789524173399261184&permissions=8&scope=bot' class="button">Invite</a>⠀<a href='https://uwubotdiscord.github.io/#Commands' class="button">Commands</a>⠀<a href='https://top.gg/bot/789524173399261184/vote' class="button">Vote</a></p></div>
-      </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <h2>UwUBot Webhook Sender</h2>
-      <label for="weburl"><span class="rqs" title="This is required">*</span> Webhook URL</label>
-      <input type="text" id="url" name="weburl" style="width: 20em" />
-      <p class="validation" id="urlValidation"></p>
-      <div hidden>
-      <div class="inlblock">
-        <label for="nick">Webhook Username</label>
-        <input type="text" id="nick" name="nick" value="UwUBot" maxlength="32"/>
-      </div>
-      <div class="inlblock" style="margin-left: 40px;">
-        <label for="avatar">Webhook Avatar URL</label>
-        <input type="url" id="avatar" name="avatar" value="https://images.discordapp.net/avatars/789524173399261184/c477c3bfd3ea4f876bb39336ec307647.png?size=512" class="inlblock" style="width: 20em;"/>
-      </div>
-      </div>
-      <div class="inlblock">
-        <label for="text">Message Content</label>
-        <textarea class="autoExpand" id="text" name="text" data-min-rows="1" rows="1" cols="50" maxlength="2000"></textarea>
-      </div>
-      <br/>
-      <div hidden class="inlblock" style="margin-left: 40px;">
-        <label for="tts" style="margin-bottom: 5px;">Use TTS</label>
-        <label class="switch">
-          <input type="checkbox" id="tts" name="tts"/>
-          <div class="slider round"></div>
-        </label>
-      </div>
-      <div id="send" class="button">Send</div>
-      <h2>Embeds</h2>
-      <div id="embeds">
-      </div>
-      <br/>
-      <div id="newemb" class="button">Add Embed</div>
-      <br/><br/><br/><br/><br/>
-      <a href='https://github.com/PgBiel/discord-webhooks'>Github original</a>
-  </body>
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+&nbsp;</p>
+
+<p></p>
+
+<h2>UwUBot Webhook Sender</h2>
+
+<p><label for="weburl"><span class="rqs" title="This is required">*</span> Webhook URL</label> <input id="url" name="weburl" style="width: 20em" type="text" /></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p class="validation" id="urlValidation"></p>
+
+<div hidden="">
+<div class="inlblock"><label for="nick">Webhook Username</label> <input id="nick" maxlength="32" name="nick" type="text" value="UwUBot" /></div>
+
+<div class="inlblock" style="margin-left: 40px;"><label for="avatar">Webhook Avatar URL</label> <input class="inlblock" id="avatar" name="avatar" style="width: 20em;" type="url" value="https://images.discordapp.net/avatars/789524173399261184/c477c3bfd3ea4f876bb39336ec307647.png?size=512" /></div>
+</div>
+
+<div class="inlblock"><label for="text">Message Content</label><textarea class="autoExpand" cols="50" data-min-rows="1" id="text" maxlength="2000" name="text" rows="1"></textarea></div>
+
+<p></p>
+
+<div class="inlblock" hidden="" style="margin-left: 40px;"><label for="tts" style="margin-bottom: 5px;">Use TTS</label> <label class="switch"> <input id="tts" name="tts" type="checkbox" /> </label>
+
+<div class="slider round"></div>
+<label class="switch"> </label></div>
+
+<p></p>
+
+<div class="button" id="send">Send</div>
+
+<h2>Embeds</h2>
+
+<div id="embeds"></div>
+
+<p></p>
+
+<div class="button" id="newemb">Add Embed</div>
+
+<p>&nbsp;
+<p>&nbsp;
+<p>&nbsp;
+<p>&nbsp;
+<p><br />
+<a href="https://github.com/PgBiel/discord-webhooks">Github original</a></p>
+</p>
+</p>
+</p>
+</p>
+
+<p></p>
+</body>
 </html>

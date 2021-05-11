@@ -1,24 +1,14 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="title" content="UwUBot Discord Bot">
-    <meta name="description" content="Moderation, server stats, fun bot, and log bot, all in one place! INVITE TODAY!">
-    <meta name="keywords" content="UwUBot, Moderation, Server stats, Fun bot, and log bot.">
-    <meta name="robots" content="index, follow">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="language" content="English">
-    <meta property="og:image"  content="UwUBotPic.png">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,400;0,900;1,279;1,900&display=swap"
-      rel="stylesheet"
-    />
-<style>
-html{
+<head><meta charset="utf-8">
+	<title>UwUBot Homepage</title>
+	<link href="http://assets.uwubot.org/images/servericon.png" rel="shortcut icon" type="image/gif" /><meta name="title" content="UwUBot Discord Bot"><meta name="description" content="Moderation, server stats, fun bot, and log bot, all in one place! INVITE TODAY!"><meta name="keywords" content="UwUBot, Moderation, Server stats, Fun bot, and log bot."><meta name="robots" content="index, follow"><meta name="language" content="English"><meta property="og:image"  content="UwUBotPic.png">
+	<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,400;0,900;1,279;1,900&amp;display=swap" rel="stylesheet" />
+	<style type="text/css">html{
  margin: 0;
  padding: 0;
  font: 1.5vw Arial;
- background: url("background.png");
+ background: url("http://assets.uwubot.org/images/background1.png");
  background-attachment: fixed;
  background-repeat: no-repeat;
  background-size: cover;
@@ -37,7 +27,7 @@ body {
   padding: 2vw;
 }
 .wave{
- background: url("waves.png");
+ background: url("http://assets.uwubot.org/images/waves.png");
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
@@ -102,76 +92,291 @@ position: absolute;
 left: 0px;
 width: 100%;
 background-color: #233339;
+}
 
-</style>   
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #494949;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #233339;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #233339;
+  color: white;
+}
+	</style>
 </head>
-  <body>
-  <div class="wave"></div>
-  <div class=textbigcenter><p>Improve your<br/>Discord server!</p></div>
-  <div class=centeredtext><p>Moderation, fun bot, and log bot all in one place!</p></div>
-  <div class=textbuttoncenter><a href='https://discord.com/api/oauth2/authorize?client_id=789524173399261184&permissions=8&scope=bot' class="button">INVITE NOW!</a></div>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <div class=centeredtext><img src="https://top.gg/api/widget/789524173399261184.svg?usernamecolor=FFFFFF&topcolor=000000" alt="BotInfo" width="500" height="600"></div>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br id="Commands" />
-  <br/>
-  <br/>
-  <br/>
-  <div class="section">
-  <div class="headertext"><h2>Commands</h2></div>
-  <div class="textbold">
-  <p>-General Commands-</p>
-  <p>/commands - show commands</p>
-  <p>/help - show help/info</p>
-  <p>/info - show help/info</p>
-  <p>/website - shows bot website</p>
-  <p>/botstats - shows bot infomation</p>
-  <p>/UwU - posts a UwU to chat</p>
-  <p>/OwO - posts a OwO to chat</p>
-  <p>/reddit - posts the reddit link to chat</p>
-  <p>/cat - posts a cat image to chat</p>
-  <p>/fox - posts a fox image to chat</p>
-  <p>/proto - posts a protogen image to chat</p>
-  <p>/boop [user] - boops a user</p>
-  <p>/hug [user] - hugs a user</p>
-  <p>/say [message] - sends a message to chat</p>
-  <p>/comedymoment - gives a award for comedy</p>
-  <p>/delet-this - delet this gif</p>
-  <p>/cookie - posts oOoOOo a cookie :3 to chat</p>
-  <p>/botinvite - posts bot invite link to chat</p>
-  <p>/dice - picks a number including or between 1 and 6</p>
-  <p>/gay - picks a percentage on how gay you are out of 100</p>
-  <p>/furry - picks a percentage on how much of a furry you are out of 100</p>
-  <p>/ship [user] - ships you with a user and gives a percentage on compatiblity out of 100</p>
-  <p>/global [message] - posts a message in all servers with #global channel</p>
-  <p>/topgg - gives link to top.gg page</p>
-  <p>-Mod Commands-</p>
-  <p>/kick [user] - kicks a user from server</p>
-  <p>/ban [user] - bans a user from server</p>
-  <p>/warn [user] [message] - warns a user</p>
-  <p>/clear - clears 25 messages</p>
-  <br>
-  <br>
-  <p>Create a #uwulog channel to log messages</p>
-  <p>Create a #welcome for welcome cards</p>
-  <p>Create a #uwuannouncements for UwUBot announcements</p>
-  <br>
-  <br>
-  <p>Please note this bot is in development and may go down sometimes</p>
-  <p>SUPPORT - support@support.uwubot.org </p>
-  </div>
-  </div>
-  <div class="header">
-  <div class="headertext"><p>UwUBot | Discord Bot ⠀<a href='http://uwubot.uk.to/' class="button">Home</a>⠀<a href='http://uwubot.us.to:8080/gb-status' class="button">Dashboard</a>⠀<a href='https://discord.com/api/oauth2/authorize?client_id=789524173399261184&permissions=8&scope=bot' class="button">Invite</a>⠀<a href='#Commands' class="button">Commands</a>⠀<a href='https://top.gg/bot/789524173399261184/vote' class="button">Vote</a></p></div>
-  </div>
-  </body>
+<body data-new-gr-c-s-loaded="14.1005.0">
+<div class="wave"></div>
+
+<div class="header">
+<div class="headertext">
+<p>UwUBot | Discord Bot⠀<a class="button" href="https://uwubot.org/">Home</a>⠀<a class="button" href="http://uwubot.org/dashboard">Dashboard</a>⠀ <a class="button" href="https://support.uwubot.org/">Contacts us!</a>⠀<a class="button" href="https://discord.com/api/oauth2/authorize?client_id=789524173399261184&amp;permissions=8&amp;scope=bot">Invite</a>⠀<a class="button" href="#Commands">Commands</a>⠀<a class="button" href="https://top.gg/bot/789524173399261184/vote">Vote</a></p>
+</div>
+</div>
+<!-- The Modal -->
+
+<div class="modal" id="myModal"><!-- Modal content -->
+<div class="modal-content">
+<div class="modal-header"><span class="close">&times;</span>
+
+<h2>NEW:</h2>
+</div>
+
+<div class="modal-body">
+<p>UwUBot now has a rank system!</p>
+</div>
+
+<div class="modal-footer">
+<h3>Create a #uwurank to get it working.</h3>
+</div>
+</div>
+</div>
+<!-- When a new command is added remove the '// from the script below' --><script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// Open the modal 
+modal.style.display = "block";
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+<div class="textbigcenter">
+<p>Improve your<br />
+Discord server!</p>
+</div>
+
+<div class="centeredtext">
+<p>Moderation, fun bot, and log bot all in one place!</p>
+</div>
+
+<div class="textbuttoncenter"><a class="button" href="https://discord.com/api/oauth2/authorize?client_id=789524173399261184&amp;permissions=8&amp;scope=bot">INVITE NOW!</a></div>
+
+<div class="textbuttoncenter"><a class="button" href="https://uwubot.org/discord">UwUBot Discord Server</a></div>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<div class="centeredtext"><img alt="BotInfo" height="600" src="https://top.gg/api/widget/789524173399261184.svg?usernamecolor=FFFFFF&amp;topcolor=000000" width="500" /></div>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<div class="section">
+<div class="headertext"></div>
+
+<div class="textbold">
+<p>-General Commands-</p>
+
+<p>/commands - show commands</p>
+
+<p>/timeline - show development timeline</p>
+
+<p>/help - show help/info</p>
+
+<p>/info - show help/info</p>
+
+<p>/discord - official uwubot discord link</p>
+
+<p>/website - shows bot website</p>
+
+<p>/botstats - shows bot infomation</p>
+
+<p>/UwU - posts a UwU to chat</p>
+
+<p>/OwO - posts a OwO to chat</p>
+
+<p>/reddit - posts the reddit link to chat</p>
+
+<p>/cat - posts a cat image to chat</p>
+
+<p>/fox - posts a fox image to chat</p>
+
+<p>/proto - posts a protogen image to chat</p>
+
+<p>/boop [user] - boops a user</p>
+
+<p>/hug [user] - hugs a user</p>
+
+<p>/say [message] - sends a message to chat</p>
+
+<p>/comedymoment - gives a award for comedy</p>
+
+<p>/delet-this - delet this gif</p>
+
+<p>/cookie - posts oOoOOo a cookie :3 to chat</p>
+
+<p>/botinvite - posts bot invite link to chat</p>
+
+<p>/dice - picks a number including or between 1 and 6</p>
+
+<p>/gay - picks a percentage on how gay you are out of 100</p>
+
+<p>/furry - picks a percentage on how much of a furry you are out of 100</p>
+
+<p>/ship [user] - ships you with a user and gives a percentage on compatiblity out of 100</p>
+
+<p>/global [message] - posts a message in all servers with #global channel</p>
+
+<p>/topgg - gives link to top.gg page</p>
+
+<p>/rank [optional user] - gives rank of user</p>
+
+<p>/leaderboard - gives the leaderboard for current server</p>
+
+<p>-Mod Commands-</p>
+
+<p>/kick [user] - kicks a user from server</p>
+
+<p>/ban [user] - bans a user from server</p>
+
+<p>/warn [user] [message] - warns a user</p>
+
+<p>/clear - clears 25 messages</p>
+&nbsp;
+
+<p>Create a #uwulog channel to log messages</p>
+
+<p>Create a #uwurank for levels</p>
+
+<p>Create a #welcome for welcome cards</p>
+
+<p>Create a #uwuannouncements for UwUBot announcements</p>
+&nbsp;
+
+<p>Please note this bot is in development and may go down sometimes</p>
+
+<p>Support - <a href="https://support.uwubot.org">https://support.uwubot.org</a></p>
+
+<p>Privacy Policy - <a href="https://uwubot.org/privacy-policy/">https://uwubot.org/privacy-policy/</a></p>
+</div>
+</div>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+</body>
 </html>

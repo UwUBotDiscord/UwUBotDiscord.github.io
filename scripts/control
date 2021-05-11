@@ -1,0 +1,9 @@
+Package: ObsdianOS-Imager
+Version: 1.0
+Section: custom
+Priority: optional
+Architecture: armhf
+Essential: no
+Installed-Size: 1024
+Maintainer: Seth Olivarez <olivarezseth23@gmail.com>
+Description: A fork of raspberry pi imager made for ObsidianOS by oxmc.
